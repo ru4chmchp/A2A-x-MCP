@@ -10,7 +10,6 @@ const SubmitForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Gửi form với:", { query, taskTypes });
-    // TODO: gọi API hoặc trigger agent ở đây
   };
   return (
     <>

@@ -1,6 +1,8 @@
-# 🌐 AI-Powered OSINT Research Agent System
+# 🌐 PRAISE
 
-Thì đây sẽ là dự án triển khai integration among A2A and MCP, tất cả source code mình sẽ viết bằng `go` để vừa luyện `go` vừa triển khai dự án thử.
+Thì đây sẽ là dự án triển khai integration among A2A and MCP, và chỉ là một project self-study nên mình sẽ cố gắng hết sức.
+
+Project sẽ về Pentest web với phần chính chủ yếu về recon
 
 ## System architecture
 
