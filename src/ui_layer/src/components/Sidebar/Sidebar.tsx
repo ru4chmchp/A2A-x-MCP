@@ -10,8 +10,8 @@ const Sidebar: React.FC = () => {
 
   const items = [
     { to: "/", icon: <LayoutDashboard size={20} />, lable: "Home" },
+    { to: "/agent", icon: <Bot size={20} />, lable: "Agents" },
     { to: "/user", icon: <Share2 size={20} />, lable: "History" },
-    // { to: "/cloud", icon: <Bot size={20} />, lable: "Agents" },
     // { to: "/report", icon: <FileText size={20} />, lable: "Reports" },
   ];
 

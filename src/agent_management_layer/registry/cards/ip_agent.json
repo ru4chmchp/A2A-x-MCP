@@ -1,0 +1,34 @@
+{
+  "id": "001",
+  "name": "Nslookup",
+  "description": "Lookup you domain name and find ip throw tool lookup",
+  "version": "1.0.0",
+  "capabilities": [
+    {
+      "function_name": "scan_technologies",
+      "description": "Scan website and extract technology stack.",
+      "params": [
+        {
+          "name": "url",
+          "type": "string"
+        }
+      ],
+      "returns": [
+        {
+          "name": "technologies",
+          "type": "[]string"
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "auth_required": false,
+    "methods": [],
+    "scopes": []
+  },
+  "metadata": {
+    "category": "Reconnaissance",
+    "tags": ["recon", "techstack", "wappalyzer"],
+    "creator": "Nguyen Huu Dung"
+  }
+}
