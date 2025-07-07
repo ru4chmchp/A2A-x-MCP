@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"github.com/ru4chmchp/A2A-x-MCP/agentcard"
+	"github.com/ru4chmchp/A2A-x-MCP/registry"
 )
 
 func main() {
@@ -14,7 +15,7 @@ func main() {
 	}
 
 	fmt.Printf("Loaded %d agent cards\n", len(cards))
-
+	agents := registry.NewRegistry()
 	for _, card := range cards {
 
 		if err := agentcard.ValidateAgentCard(card); err != nil {
@@ -22,7 +23,12 @@ func main() {
 		} else {
 			fmt.Println("Agent card valid")
 		}
+		agents.Register(card)
 
+	}
+
+	for _, result := range agents.FindByCategory("Reconnaissance") {
+		println(result.Name)
 	}
 
 }

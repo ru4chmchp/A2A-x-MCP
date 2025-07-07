@@ -53,6 +53,9 @@ func ValidateAgentCard(card *AgentCard) error {
 
 }
 
+// biểu thức chính quy Regular expression là một chuỗi kí tự dùng để tạo thành mẫu để tìm kiếm
+// hàm regexp.Muscompile nó sẽ biên dịch chuỗi biểu thức chính quy bạn cung cấp thành một đối tượng mà go có thể sử dụng để thực hiện các phép sánh với yêu cầu trong tham số
+// nó sẽ kiểm tra biểu thức chinh quy nhập vào,^ là khởi đầu một chuỗi, \d là kiểm tra số [0-9], {3} là lượng từ có nghĩa là phải có chính xác 3 chữ số, dấu $ là kết thúc của chuỗi
 func isValidID(id string) bool {
 	var idPattern = regexp.MustCompile(`^\d{3}$`)
 	return idPattern.MatchString(id)
